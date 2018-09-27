@@ -1,1 +1,52 @@
-/* Add your CSS here */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #fefefe;
+  font-family: sans-serif;
+  color: #555;
+}
+
+body {
+  background: #fff;
+  border: 1px solid #ccc;
+  margin: 1em;
+}
+
+body:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+main {
+  margin-left: 20%;
+  border-left: 1px solid #ccc;
+}
+
+nav, main {
+  padding: 2.5rem;
+}
+
+nav > ul {
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  color: #aaa;
+  padding: 0.5rem 0;
+}
+
+li ul li {
+  color: #222;
+}

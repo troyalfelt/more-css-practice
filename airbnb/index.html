@@ -1,28 +1,57 @@
-<!-- Markup this content with HTML here -->
-[Page Title: Airbnb]
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
 
+    <title>Airbnb</title>
 
-Book unique homes and experiences.
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+  </head>
+  <body>
+    <h1>Book unique homes and experiences</h1> 
 
+    <form action="#">
+      <label>
+        Where
+        <input type="text" placeholder="Anywhere" />
+      </label>
 
-Where
-[Text Input]
+      <label class="halfwidth left">
+        Check in
+        <input type="date" />
+      </label>
 
-Check In
-[Date Input]
+      <label class="halfwidth right">
+        Check out
+        <input type="date" />
+      </label>
 
-Check Out
-[Date Input]
+      <label>
+        Guests
+        <input type="number" placeholder="1 guest" min="1" max="20"/>
+      </label>
 
-Guests
-[Number Input]
+      <input type="submit" value="Search" />
+    </form>
 
-Search
-[Submit Input]
+    <section>
+      <h2>Explore Airbnb</h2>
 
+      <a href="#">
+        <img src="https://via.placeholder.com/125x100" />
+        Homes
+      </a>
 
-Explore Airbnb
-Homes
-Experiences
-Restaurants
+      <a href="#">
+        <img src="https://via.placeholder.com/125x100" />
+        Experiences
+      </a>
 
+      <a href="#">
+        <img src="https://via.placeholder.com/125x100" />
+        Restaurants
+      </a>
+    </section>
+  </body>
+</html>

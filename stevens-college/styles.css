@@ -1,1 +1,28 @@
-/* Add your CSS here */
+html {
+  font-size: 18px;
+}
+body {
+  font-family: "Lato", sans-serif;
+  margin: 3rem auto;
+  width: 75%;
+  max-width: 800px;
+}
+
+img {
+  width: 100%;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  background: #a6093d;
+  color: #fff;
+  display: inline-block;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+

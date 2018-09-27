@@ -1,1 +1,74 @@
-/* Add your CSS here */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: 75%;
+}
+
+h1 {
+  background: url("https://cdn.discordapp.com/attachments/494549958834389004/494935664375103488/bridge.jpg");
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  padding: 2rem 1rem;
+  margin: 0 0 2rem 0;
+}
+
+form label,
+form input {
+  display: block;
+  width: 100%;
+}
+
+form input {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.halfwidth {
+  width: 50%;
+  float: left;
+}
+.halfwidth.right input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+}
+.halfwidth.left input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+form input[type="submit"] {
+  border: none;
+  background: #ea6b6b;
+  color: white;
+}
+
+a {
+  display: inline-block;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  padding: 2.5rem 0 2rem 150px;
+  position: relative;
+  width: 33%;
+  height: 100px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+
