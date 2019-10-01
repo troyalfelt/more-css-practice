@@ -1,11 +1,18 @@
 html {
   font-size: 18px;
 }
+
 body {
+  color: #222;
   font-family: "Lato", sans-serif;
   margin: 3rem auto;
   width: 75%;
   max-width: 800px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 
 img {
@@ -21,7 +28,7 @@ nav a {
   color: #fff;
   display: inline-block;
   margin: 1rem 0.5rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
 }
