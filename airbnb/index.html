@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css" type="text/css"/>
   </head>
   <body>
-    <h1>Book unique homes and experiences</h1> 
+    <h1>Book unique homes and experiences.</h1> 
 
     <form action="#">
       <label>
@@ -17,15 +17,17 @@
         <input type="text" placeholder="Anywhere" />
       </label>
 
-      <label class="halfwidth left">
-        Check in
-        <input type="date" />
-      </label>
+      <div class="dates">
+        <label>
+          Check in
+          <input type="date" />
+        </label>
 
-      <label class="halfwidth right">
-        Check out
-        <input type="date" />
-      </label>
+        <label>
+          Check out
+          <input type="date" placeholder="mm/dd/yyyy" />
+        </label>
+      </div>
 
       <label>
         Guests
@@ -38,20 +40,22 @@
     <section>
       <h2>Explore Airbnb</h2>
 
-      <a href="#">
-        <img src="https://via.placeholder.com/125x100" />
-        Homes
-      </a>
+      <div>
+        <a href="#">
+          <img src="https://via.placeholder.com/125x100" />
+          <span>Homes</span>
+        </a>
 
-      <a href="#">
-        <img src="https://via.placeholder.com/125x100" />
-        Experiences
-      </a>
+        <a href="#">
+          <img src="https://via.placeholder.com/125x100" />
+          <span>Experiences</span>
+        </a>
 
-      <a href="#">
-        <img src="https://via.placeholder.com/125x100" />
-        Restaurants
-      </a>
+        <a href="#">
+          <img src="https://via.placeholder.com/125x100" />
+          <span>Restaurants</span>
+        </a>
+      </div>
     </section>
   </body>
 </html>
