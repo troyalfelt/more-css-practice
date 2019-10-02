@@ -1,58 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-
     <title>Airbnb</title>
 
     <link rel="stylesheet" href="styles.css" type="text/css"/>
   </head>
   <body>
-    <h1>Book unique homes and experiences.</h1> 
-
-    <form action="#">
-      <label>
-        Where
-        <input type="text" placeholder="Anywhere" />
-      </label>
-
-      <div class="dates">
+    <section class="checkin">
+      <h1>Book unique homes and experiences.</h1>
+      
+      <form action="#">
         <label>
-          Check in
+          Where
+          <input type="text" placeholder="Anywhere" />
+        </label>
+
+        <label>
+          Check In
           <input type="date" />
         </label>
 
         <label>
-          Check out
-          <input type="date" placeholder="mm/dd/yyyy" />
+          Check Out
+          <input type="date" />
         </label>
-      </div>
 
-      <label>
-        Guests
-        <input type="number" placeholder="1 guest" min="1" max="20"/>
-      </label>
+        <label>
+          Guests
+          <input type="number" placeholder="1" min="1" max="20" />
+        </label>
 
-      <input type="submit" value="Search" />
-    </form>
+        <input type="submit" value="Search" />
 
-    <section>
-      <h2>Explore Airbnb</h2>
+      </form>
+    </section>
+
+    <section class="explore-nav">
+      <h2>Explore Airbnb</h2>      
 
       <div>
         <a href="#">
-          <img src="https://via.placeholder.com/125x100" />
+          <img src="https://placekitten.com/125/100" alt="White and orange kitten that wants to go inside" />
           <span>Homes</span>
         </a>
-
         <a href="#">
-          <img src="https://via.placeholder.com/125x100" />
+          <img src="https://placekitten.com/125/100" alt="White and orange kitten that wants to go inside" />
           <span>Experiences</span>
         </a>
-
         <a href="#">
-          <img src="https://via.placeholder.com/125x100" />
+          <img src="https://placekitten.com/125/100" alt="White and orange kitten that wants to go inside" />
           <span>Restaurants</span>
         </a>
       </div>

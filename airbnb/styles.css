@@ -1,96 +1,99 @@
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/**** General ****/
 html {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-body {
-  color: #333333;
-  margin: 0 auto;
-  width: 75%;
-}
 
-h1 {
-  background: url("https://cdn.discordapp.com/attachments/494549958834389004/494935664375103488/bridge.jpg");
-  background-position: center center;
+/**** Checkin Form ****/
+.checkin h1 {
   background-size: cover;
-  color: #fff;
-  padding: 2rem 1rem;
-  margin: 0 0 2rem 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('https://www.sftravel.com/sites/sftraveldev.prod.acquia-sites.com/files/styles/sft_views_background_mobile/public/landmark-images/golden-gate_web.jpg?itok=wcIdLd3y&timestamp=1499715987');
+  color: #ffffff;
+  padding: 2rem 0;
 }
 
-form label,
-form input {
+.checkin form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkin label {
+  color: #222222;
   display: block;
+  margin: 1rem 0;
+  text-transform: uppercase;
   width: 100%;
 }
 
-form input {
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+.checkin label:nth-of-type(2),
+.checkin label:nth-of-type(3) {
+  width: 50%;
 }
-
-.dates {
-  display: flex;
-  justify-content: stretch;
+.checkin label:nth-of-type(2) input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
-
-.dates label:last-child input {
+.checkin label:nth-of-type(3) input {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-left: none;
 }
 
-.dates label:first-child input {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+.checkin input {
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  display: block;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
 }
 
-::placeholder {
-  color: #cccccc;
-}
-
-form input[type="submit"] {
-  border: none;
-  background: #ea6b6b;
-  color: white;
+.checkin input[type="submit"] {
+  background: #d95561;
+  color: #ffffff;
   cursor: pointer;
 }
 
-section div {
+::placeholder {
+  color: #ccc;
+}
+
+
+/**** Explore Section ****/
+.explore-nav h2 {
+  margin: 2rem 0;
+}
+
+.explore-nav div {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
-section div a {
+.explore-nav div a {
+  border: 1px solid #cccccc;
+  color: #222222;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  border: 1px solid #ccc;
-  color: #333333;
+  border-radius: 2px;
+  flex-grow: 1;
   text-decoration: none;
-  width: 127px;
 }
 
-@media screen and (min-width: 1100px) {
-  section div a {
-    flex-direction: row;
-    width: 30%;
-  }
+.explore-nav div a + a {
+  margin-left: 2rem;
 }
 
-section div a:hover {
-  text-decoration: underline;
-}
-
-section div a span {
+.explore-nav div a span {
   padding: 1rem;
 }
-
 
