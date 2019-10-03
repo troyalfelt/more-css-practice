@@ -1,41 +1,78 @@
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
+/**** General Styles ****/
 html {
   color: #333;
   font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
 }
 
-article,
-nav{
+article {
+  font-size: 1.5rem;
   margin: 0 auto;
-  width: 80%;
   max-width: 800px;
+  width: 80%;
 }
 
-nav a {
+a {
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
 
-nav a + a::before {
+nav.breadcrumbs a:last-child {
+  color: #333;
+}
+nav.breadcrumbs a + a::before {
+  color: blue;
   content: "/";
+  margin-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 article {
   text-align: center;
-  margin: 8rem auto;
+  margin: 4rem auto;
+}
+
+article nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem auto;
+  width: 80%;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 p {
-  font-size: 1.5rem;
   color: #555;
 }
 
-section {
-  text-align: left;
+.sections {
+  display: flex;
+  justify-content: space-between;
 }
+.sections section {
+  padding-left: 120px;
+  position: relative;
+  text-align: left;
+  width: 47.5%;
+}
+
+.sections section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sections section h2 {
+  margin-top: 0;
+}
+
