@@ -1,1 +1,24 @@
-/* Add your CSS here */
+#opener {
+  display: flex;
+  width: 60%
+  margin-width: 10px;
+}
+
+h1 {
+  text-transform: uppercase;
+  justify-content: left;
+}
+
+nav {
+  margin: auto;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  border-color: black;
+}
+
+.box {
+  color: white;
+  padding: 10px 15px 10px 15px;
+  background-color: crimson;
+}

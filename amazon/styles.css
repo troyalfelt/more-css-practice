@@ -1,1 +1,40 @@
-/* Add your CSS here */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 50px;
+  height: 70px;
+}
+.superspan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:
+}
+.subdiv {
+  height: 50%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  margin:15px 15px 30px 15px;
+  align-items: center;
+}
+.no-underline:link {
+  margin-top: 5px;
+  text-decoration: none;
+}
+h1 {
+  color: orange;
+  margin-bottom: 15px;
+}
+p {
+  margin-top: 10px;
+  color: gray;
+}
+h2 {
+  margin-top: 20px;
+}
+hr {
+  color: #EEEEEE
+}
