@@ -1,28 +1,60 @@
-<!-- Markup this content with HTML here -->
-[Page Title: Airbnb]
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Airbnb</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+<body>
+    <div class="heading">
+      <h1>Book unique homes and experiences.</h1>
+      <img src="https://placekitten.com/200/300" alt="A banner featuring a mountain side and a ski lift"/>
+    </div>
 
+  <form>
+     <h4>Where</h4>
+     <input type="text" placeholder="  Anywhere"/>
 
-Book unique homes and experiences.
+    <span class="superspan">
 
+      <div class="half-form">
+        <h4>Check In</h4>
+        <input type="text"/ placeholder="  mm/dd/yyyy">
+      </div>
 
-Where
-[Text Input]
+      <div class="half-form">
+        <h4>Check Out</h4>
+        <input type="text"/ placeholder="  mm/dd/yyyy">
+      </div>
+    </span>
 
-Check In
-[Date Input]
+    <h4>Guests</h4>
+    <input type="text"/ placeholder="  1 guest">
 
-Check Out
-[Date Input]
+    <button type="button" id="search" onclick="alert('Cannot connect to database, try again')">Search</button>
+  </form>
 
-Guests
-[Number Input]
+  <span class="bottom">
+    <h2>Explore Airbnb</h2>
 
-Search
-[Submit Input]
+   <span class="explore-options">
 
+     <span class="subbottom">
+        <img src="https://placekitten.com/200/300" alt="A bedroom"/ class="bottom-img">
+        <h4>Homes</h4>
+     </span>
 
-Explore Airbnb
-Homes
-Experiences
-Restaurants
+     <span class="subbottom">
+        <img src="https://placekitten.com/200/300" alt="Three people riding bikes down the street" class="bottom-img"/>
+        <h4>Experiences</h4>
+     </span>
 
+    <span class="subbottom">
+      <img src="https://placekitten.com/200/300" alt="A table covered in plates of food" class="bottom-img"/>
+      <h4>Restaurants</h4>
+    </span>
+
+  </span>
+
+ </span>
+</body>
+</html>
